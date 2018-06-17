@@ -46,6 +46,32 @@ export default connect()(AddList)
 
 ```
 
+## Where the arguments come from? - and the concept destructuring in the context of React  
+
+Let's look at the following example: 
+
+```
+
+import React from ‘react’;
+
+const HelloWorld = ({name}) => (
+ <div>{`Hi ${name}`}</div>
+);
+
+export default HelloWorld;
+
+```
+
+Which was taken from [2016 Cory]. This is an example of a functional component; that, because this is mostly a function that is being used in the context of React as a component to render data based on certain inputs - with no logic. 
+
+[2016 Cory](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
+
+Now, a question is "where does name come from?" 
+
+First, we need to look at destructuring, of Destructuring assignment [1]. 
+
+[1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
+
 
 ## Stateless components - WTF are the arguments? 
 
